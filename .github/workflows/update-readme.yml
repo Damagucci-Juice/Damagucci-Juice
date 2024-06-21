@@ -28,6 +28,6 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
           git commit -m 'Update README.md with current date'
-          git push
+          git push --force-withlease origin/main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
