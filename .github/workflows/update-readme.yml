@@ -24,7 +24,7 @@ jobs:
           # Here you can use any script to update the README.md file
           # For example, let's use a simple Node.js script to append the current date
           echo "Updating README.md"
-          node -e "const fs = require('fs'); const date = new Date().toISOString(); let readme = fs.readFileSync('README.md', 'utf8'); readme += `\nLast updated: ${date}`; fs.writeFileSync('README.md', readme);"
+          node -e "const fs = require('fs'); const date = new Date().toISOString(); let readme = fs.readFileSync('README.md', 'utf8'); readme += '\nLast updated: ' + date; fs.writeFileSync('README.md', readme);"
 
       - name: Commit changes
         run: |
