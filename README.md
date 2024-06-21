@@ -18,3 +18,4 @@ Here are some ideas to get you started:
 -->
 
 오늘은 2024년 6월 21일 금요일입니다.
+오늘은 2024년 6월 21일 금요일입니다.
