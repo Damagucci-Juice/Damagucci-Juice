@@ -21,13 +21,19 @@ jobs:
 
       - name: Update README.md
         run: |
-          # Here you can use any script to update the README.md file
-          # For example, let's use a simple Node.js script to append the current date
           echo "Updating README.md"
-          node -e "const fs = require('fs'); const date = new Date().toISOString(); let readme = fs.readFileSync('README.md', 'utf8'); readme += '\nLast updated: ' + date; fs.writeFileSync('README.md', readme);"
+          node -e "
+            const fs = require('fs');
+            const date = new Date();
+            const days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
+            const formattedDate = `오늘은 ${date.getFullYear()}년 ${date.getMonth() + 1}월 ${date.getDate()}일 ${days[date.getDay()]}입니다.⭐️`;
+            let readme = fs.readFileSync('README.md', 'utf8');
+            readme += `\n${formattedDate}`;
+            fs.writeFileSync('README.md', readme);
+          "
 
       - name: Commit changes
-        run: |          
+        run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add README.md
