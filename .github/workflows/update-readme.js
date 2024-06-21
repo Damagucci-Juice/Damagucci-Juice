@@ -7,7 +7,7 @@ const formattedDate = `오늘은 ${date.getFullYear()}년 ${date.getMonth() + 1}
 // README.md 원본 내용
 const originalReadme = `
 ### Hi there 👋
-**I'm Damagucci-Juice**
+
 ${formattedDate}
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Damagucci-Juice&show_icons=true&theme=tokyonight)
