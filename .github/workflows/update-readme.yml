@@ -20,7 +20,10 @@ jobs:
           node-version: '20'
 
       - name: Pull latest changes
-        run: git pull origin main
+        run: |
+          git fetch origin
+          git checkout main
+          git pull origin main
 
       - name: Update README.md
         run: node .github/workflows/update-readme.js
