@@ -19,18 +19,18 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Update README.md
+      - name: Create update-readme.js script
         run: |
-          echo "Updating README.md"
-          node -e "
-            const fs = require('fs');
-            const date = new Date();
-            const days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
-            const formattedDate = `오늘은 ${date.getFullYear()}년 ${date.getMonth() + 1}월 ${date.getDate()}일 ${days[date.getDay()]}입니다.`;
-            let readme = fs.readFileSync('README.md', 'utf8');
-            readme += `\n${formattedDate}`;
-            fs.writeFileSync('README.md', readme);
-          "
+          echo "const fs = require('fs');" > update-readme.js
+          echo "const date = new Date();" >> update-readme.js
+          echo "const days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];" >> update-readme.js
+          echo "const formattedDate = \`오늘은 \${date.getFullYear()}년 \${date.getMonth() + 1}월 \${date.getDate()}일 \${days[date.getDay()]}입니다.\`;" >> update-readme.js
+          echo "let readme = fs.readFileSync('README.md', 'utf8');" >> update-readme.js
+          echo "readme += \`\\n\${formattedDate}\`;" >> update-readme.js
+          echo "fs.writeFileSync('README.md', readme);" >> update-readme.js
+
+      - name: Update README.md
+        run: node update-readme.js
 
       - name: Commit changes
         run: |
