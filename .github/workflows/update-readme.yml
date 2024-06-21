@@ -20,7 +20,7 @@ jobs:
           node-version: '20'
 
       - name: Update README.md
-        run: node update-readme.js
+        run: node .github/workflows/update-readme.js
 
       - name: Commit changes
         run: |
