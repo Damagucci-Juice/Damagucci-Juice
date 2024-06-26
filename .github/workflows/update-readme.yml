@@ -3,7 +3,8 @@ name: Update README
 on:
   schedule:
     # Runs every day at midnight
-    - cron: '0 0 * * *'
+    # 이 크론은 평일 15시 (한국시간 자정)에 실행됩니다.
+    - cron: '0 15 * * *'
   workflow_dispatch:
 
 jobs:
