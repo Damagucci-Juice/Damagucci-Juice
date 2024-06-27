@@ -2,7 +2,7 @@
 const fs = require('fs');
 const date = new Date();
 const days = ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'];
-const formattedDate = `오늘은 ${date.getFullYear()}년 ${date.getMonth() + 1}월 ${date.getDate()}일 ${days[date.getDay()]}입니다.`;
+const formattedDate = `오늘은 ${date.getFullYear()}년 ${date.getMonth() + 1}월 ${date.getDate() + 1}일 ${days[date.getDay() + 1]}입니다.`;
 
 // README.md 원본 내용
 const originalReadme = `
