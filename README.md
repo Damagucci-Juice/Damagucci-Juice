@@ -1,7 +1,7 @@
 
 ### Hi there 👋
 
-오늘은 2024년 9월 28일 토요일입니다.
+오늘은 2024년 9월 29일 undefined입니다.
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Damagucci-Juice&show_icons=true&theme=tokyonight)
 
