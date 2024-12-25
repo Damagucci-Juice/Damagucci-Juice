@@ -1,7 +1,7 @@
 
 ### Hi there 👋
 
-오늘은 2024년 12월 25일 수요일입니다.
+오늘은 2024년 12월 26일 목요일입니다.
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Damagucci-Juice&show_icons=true&theme=tokyonight)
 
