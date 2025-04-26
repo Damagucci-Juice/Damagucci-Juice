@@ -1,7 +1,7 @@
 
 ### Hi there 👋
 
-오늘은 2025년 4월 26일 토요일입니다.
+오늘은 2025년 4월 27일 undefined입니다.
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Damagucci-Juice&show_icons=true&theme=tokyonight)
 
