@@ -1,7 +1,7 @@
 
 ### Hi there 👋
 
-오늘은 2025년 6월 19일 목요일입니다.
+오늘은 2025년 6월 20일 금요일입니다.
 
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Damagucci-Juice&show_icons=true&theme=tokyonight)
 
